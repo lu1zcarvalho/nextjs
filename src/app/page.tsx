@@ -26,15 +26,13 @@ async function delayFetch(url: string, delay: number) {
 // }
 
 async function getData() {
-  const data = await delayFetch("https:api.github.com/users/lu1zcarvalho/repos", 2500)
+  const data = await delayFetch("https:api.github.com/users/lu1zcarvalho/repos", 1500)
   return data;
 }
 
 export default async function Home() {
 
   const data: DataProps[] = await getData();
-
-
 
   return (
     <main>
