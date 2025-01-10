@@ -17,14 +17,6 @@ async function delayFetch(url: string, delay: number) {
   return response.json();
 }
 
-
-// async function getData() {
-//   // https:api.github.com/users/lu1zcarvalho/repos
-//   const response = await fetch("https:api.github.com/users/lu1zcarvalho/repos")
-
-//   return response.json();
-// }
-
 async function getData() {
   const data = await delayFetch("https:api.github.com/users/lu1zcarvalho/repos", 1500)
   return data;
